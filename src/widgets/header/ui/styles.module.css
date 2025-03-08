@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 72px;
+  padding-bottom: 80px;
+  background: var(--gray-700);
+  max-height: 200px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--blue);
+  text-transform: lowercase;
+}
+
+.titleAccent {
+  color: var(--purpledark);
+}
