@@ -1,0 +1,33 @@
+.empty {
+  padding-block: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-300);
+}
+
+.emptyImage {
+  width: 56px;
+  height: 56px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.emptyDescriptionBold {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.item {
+  margin-bottom: 12px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}

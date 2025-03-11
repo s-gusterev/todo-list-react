@@ -25,10 +25,25 @@
 
 body {
   font-family: var(--font-family);
+  background: var(--gray-600);
 }
 
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.Toastify__toast-theme--dark {
+  background-color: var(--gray-500);
+  --toastify-icon-color-success: var(--blue);
+  --toastify-icon-color-error: var(--danger);
+  --toastify-color-progress-success: var(--blue);
+  --toastify-color-progress-error: var(--danger);
+  font-family: var(--font-family);
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  font-size: 14px;
 }

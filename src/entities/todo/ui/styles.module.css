@@ -1,0 +1,97 @@
+.item {
+  padding: 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+  background: var(--gray-500);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--gray-100);
+  display: flex;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox {
+  margin-right: 16px;
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  position: relative;
+  /* padding-left: 25px; */
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--blue);
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+/* Стиль при активации */
+.checkbox:checked + .label::before {
+  background: var(--purpledark);
+  border-color: var(--purpledark);
+}
+
+/* Галочка */
+.checkbox:checked + .label::after {
+  content: '✓';
+  position: absolute;
+
+  left: 6px;
+  color: white;
+  font-size: 8px;
+}
+
+.checkbox:checked ~ .text {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.button {
+  margin-left: auto;
+  border: none;
+  background: none;
+  color: var(--danger);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.editInput {
+  border: none;
+  background: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--gray-100);
+  width: 100%;
+  height: 100%;
+  padding-top: 1px;
+  font-family: var(--font-family);
+}
+
+.editInput:focus {
+  outline: none;
+}
+
+.text {
+  cursor: pointer;
+}

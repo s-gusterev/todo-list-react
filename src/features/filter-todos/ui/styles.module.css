@@ -1,0 +1,28 @@
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.button {
+  border-radius: 8px;
+  border: none;
+  padding: 16px;
+  height: 42px;
+  background: var(--blue-dark);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--gray-100);
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.active {
+  background: var(--purpledark);
+}
